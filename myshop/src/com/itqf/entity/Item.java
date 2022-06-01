@@ -1,0 +1,72 @@
+package com.itqf.entity;
+import java.io.Serializable;
+import java.math.BigDecimal;
+public class Item implements Serializable{
+    private static  final long serialVersionUID = 1L;
+    private int iid;
+    private String oid;
+    private int pid;
+    private Product product;
+    private BigDecimal icount;
+    private int inum;
+
+    public int getIid() {
+        return iid;
+    }
+
+    public void setIid(int iid) {
+        this.iid = iid;
+    }
+
+    public String getOid() {
+        return oid;
+    }
+
+    public void setOid(String oid) {
+        this.oid = oid;
+    }
+
+    public int getPid() {
+        return pid;
+    }
+
+    public void setPid(int pid) {
+        this.pid = pid;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public BigDecimal getIcount() {
+        return icount;
+    }
+
+    public void setIcount(BigDecimal icount) {
+        this.icount = icount;
+    }
+
+    public int getInum() {
+        return inum;
+    }
+
+    public void setInum(int inum) {
+        this.inum = inum;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "iid=" + iid +
+                ", oid='" + oid + '\'' +
+                ", pid=" + pid +
+                ", product=" + product +
+                ", icount=" + icount +
+                ", inum=" + inum +
+                '}';
+    }
+}
